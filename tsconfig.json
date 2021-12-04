@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "target": "ES2018",
+        "module": "ESNext",
+        "allowJs": true,
+        "checkJs": true,
+        "jsx": "preserve",
+        "jsxFactory": "h",
+        "jsxFragmentFactory": "Fragment",
+        "noEmit": true,
+        "strict": true,
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "paths": {
+            "@lib/*": ["lib/*"],
+            "@assets/*": ["assets/*"],
+            "@components/*": ["components/*"],
+            "@packages/*": ["packages/*"],
+            "@utils/*": ["utils/*"],
+            "@config/*": ["config/*"],
+            "@hooks/*": ["hooks/*"],
+            "@provider/*": ["providers/*"],
+            "@locales/*": ["locales/*"]
+        },
+        "typeRoots": ["./node_modules/@types", "./@types"],
+        "esModuleInterop": true,
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"],
+    "exclude": ["node_modules", "types", ".next", "out"]
+}
